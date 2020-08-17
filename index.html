@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
-            <a href="index.html" target="blanked">Sobre</a>
+            <a href="index.html">Sobre</a>
 
         </li>
         <li>
-            <a href="contato.html">Contato</a>
+            <a href="">Contato</a>
         </li>
 
     </ul>
 
-    <h1>Quem sou eu?</h1>
-    
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae cum cumque dolorum maxime eveniet doloribus. Magni, illum. Nihil repellat dolore, reiciendis necessitatibus explicabo perferendis fugiat blanditiis et ipsam unde quasi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste culpa quos minima quod beatae ab animi tenetur labore, quae consequuntur quasi eaque, officiis voluptatibus! Eaque necessitatibus dicta facere magnam est? 
-    </p>
+    <h1 class="formatacao">Quem sou eu?</h1>
+    <div class="container">
+         <p class="formatacao">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae cum cumque dolorum maxime eveniet doloribus. Magni, illum. Nihil repellat dolore, reiciendis necessitatibus explicabo perferendis fugiat blanditiis et ipsam unde quasi.
+         </p>
+        <div class ="circulo">
+            <img class ="circulo" src="assets/img/Heitor.JPG" alt="Imagem do criador da página.Homem branco, óculos, cabelos escuros e cacheados, sorrindo. Fundo branco.">
+        </div>
+        <p class="formatacao">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae cum cumque dolorum maxime eveniet doloribus. Magni, illum. Nihil repellat dolore, reiciendis necessitatibus explicabo perferendis fugiat blanditiis et ipsam unde quasi.
+        </p>
+    </div>
+    <h2 class="formatacao">Uma música</h2>
 
-    <img src="assets/img/Heitor.JPG" alt="Homem branco, óculos, cabelos escuros e cacheados, sorrindo. Fundo branco.">
-    <h2>Uma música</h2>
-    <iframe 
+    <div class="container">
+     <iframe 
     width="560" 
     height="315" 
     src="https://www.youtube.com/embed/aTUcg2q-dDA?controls=0&amp;start=10"
@@ -36,5 +42,22 @@
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
     ></iframe>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/heitor-augusto-oliveira/">
+                <img class="tm-social p-30"src="assets/img/031-linkedin.png" alt="">
+            </a>
+            <a href="https://github.com/heitoraugs">
+                <img class="tm-social p-30"src="assets/img/039-github.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/heitor_augs/">
+            <img class="tm-social p-30"src="assets/img/034-instagram.png" alt="">
+            </a>
+        </div>
+        <p class="formatacao">Heitor Augusto &copy</p>
+    </footer>
 </body>
 </html>

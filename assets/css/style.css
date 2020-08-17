@@ -1,0 +1,47 @@
+/*Index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.formatacao{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.p-30{
+    padding: 30px;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.circulo img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px; 
+    object-fit: cover; 
+  }
+#menu li{
+    display: inline;
+    padding: 12px;
+
+}
+/*Está referenciando a ancora (a). O texto que está no link*/
+#menu li a{         
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*Ação quando o mouse estiver emcima*/
+#menu li a:hover{
+    color: blueviolet;
+}
+.tm-social{
+   width: 50px; 
+   height: 50px;
+}
+
+
+
+/*contato.html*/
+
