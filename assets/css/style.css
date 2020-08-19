@@ -1,47 +1,104 @@
-/*Index.html*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-.formatacao{
-    font-size: 20px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&display=swap');
+
+/*FORMATAÇÃO INDEX.HTML*/
+
+body{background-color: #EDF2F4;}
+h2{color: #4F6A75;}
+h1{color: #4F6A75;}
+
+                /*FORMATAÇÃO MENU*/
+
+/*Em linha e padding*/
+#menu li{
+    display: inline;
+    padding: 12px;
+}
+/*Formatação dos links*/
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
     font-family: 'Josefin Sans', sans-serif;
 }
-.p-30{
-    padding: 30px;
+/*Ação do mouse nos links do menu*/
+#menu li a:hover{
+    color:#BCC0C2;
+}
+
+                /*TEXTO E IMAGEM DO CORPO DA PÁGINA*/
+.texto{
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Josefin Slab', serif;
+    color:#343536;
+}
+.titulo{
+    text-align: center;
+    font-size:24px;
+    font-family: 'Josefin Sans',sans-serif;
 }
 .container{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 .circulo img{
     border-radius: 50%;
     height: 250px;
-    width: 250px; 
-    object-fit: cover; 
-  }
-#menu li{
-    display: inline;
-    padding: 12px;
+    width: 250px;
+    object-fit: cover;
+}
+.pad-30{
+    padding: 30px;
+}
+                /*FOOTER*/
 
+.icone{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }
-/*Está referenciando a ancora (a). O texto que está no link*/
-#menu li a{         
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-/*Ação quando o mouse estiver emcima*/
-#menu li a:hover{
-    color: blueviolet;
-}
-.tm-social{
-   width: 50px; 
-   height: 50px;
+.footer{
+    font-family: 'Josefin Sans',sans-serif;
+    color:#343536;
+    font-size: 22px;
+    text-align: center;
 }
 
+/*FORMATAÇÃO CONTATO.HTML*/
 
+#nome{
+    display: flex;
+    align-items: start;
+}
+#email{
+    display: flex;
+    align-items: start;
+}
+#assunto{
+    display: flex;
+    align-items: start;
+}
 
-/*contato.html*/
+.contato{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size:16px;
+    padding: 15px;
+    align-items: baseline;
+    color: #4F6A75;
+}
+.tituloC{
+    font-size:24px;
+    font-family: 'Josefin Sans',sans-serif;
+    padding: 10px;
+}
+.containerC{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
 
+.margin{
+    margin-bottom: 65px;
+}
