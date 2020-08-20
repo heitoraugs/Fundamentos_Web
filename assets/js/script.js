@@ -2,6 +2,10 @@
 let nome = window.document.getElementById('nome');
 let email = document.querySelector('#email'); 
 let assunto = document.querySelector('#assunto');
+let nomeVld = false
+let emailVld= false //Variáveis para a validação dos campos
+let assuntoVld= false
+let mapa=document.querySelector('#mapa')
 
 /*A variável nome já está linkada com o elemento com id=nome, vindo de Contato*/
 /*Assim, é possível chamar a variável e fazer mudanças nesse elemento*/
@@ -9,6 +13,7 @@ let assunto = document.querySelector('#assunto');
 /*O campo de NOME passa a ocupar 100% da coluna da row */
 nome.style.width ='100%'
 email.style.width='100%'
+assunto.style.width='100%'
 
                 /*FUNÇÕES */
 
@@ -20,6 +25,7 @@ function validaNome(){
     }else{
         txt.innerHTML = 'Nome válido'
         txt.style.color = 'green'
+        nomeVld=true
     }
 }
 function validaEmail(){
@@ -30,5 +36,34 @@ function validaEmail(){
     }else{
         txt.innerHTML ='Email válido'
         txt.style.color='green'
+        emailVld=true
     }
+}
+function validaAssunto(){
+    let txt = document.querySelector('#txtAssunto')
+
+    if(assunto.value.length >=100){
+        txtAssunto.innerHTML ='Limite de carácteres ultrapassado'
+        txt.style.color ='red'
+        txtAssunto.style.display='block'
+    }else{
+        txtAssunto.style.display='none'
+        assuntoVld=true
+    }
+}
+function enviar(){
+    if(nomeVld == true && emailVld==true && assuntoVld==true){
+        alert('Mensagem enviado com sucesso!')
+    }else{
+        alert('Preencha todos os campos da mensagem!')
+    }
+}
+function zoomImg(){
+    mapa.style.width='800px'
+    mapa.style.height='600px'
+}
+
+function normalImg(){
+    mapa.style.width='400px'
+    mapa.style.height='300px'
 }
